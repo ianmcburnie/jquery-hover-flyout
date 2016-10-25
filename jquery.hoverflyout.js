@@ -1,6 +1,6 @@
 /**
 * @file jQuery plugin that creates the basic interactivity for a flyout that opens on hover of trigger element
-* @version 0.0.2
+* @version 0.0.3
 * @author Ian McBurnie <ianmcburnie@hotmail.com>
 * @requires jquery-next-id
 * @requires jquery-mouse-exit
@@ -32,7 +32,6 @@
             var expandFlyout = function() {
                 if ($trigger.attr('aria-expanded') === 'false') {
                     $trigger.attr('aria-expanded', 'true');
-                    $overlay.attr('aria-hidden', 'false');
                     $widget.trigger('flyoutExpand');
                 }
             };
@@ -41,7 +40,6 @@
             var collapseFlyout = function() {
                 if ($trigger.attr('aria-expanded') === 'true') {
                     $trigger.attr('aria-expanded', 'false');
-                    $overlay.attr('aria-hidden', 'true');
                     $widget.trigger('flyoutCollapse');
                 }
             };
@@ -53,9 +51,6 @@
             if ($overlay.prop('id') === '') {
                 $overlay.prop('id', $widget.prop('id') + '-overlay');
             }
-
-            // initial state is hidden from assistive technology
-            $overlay.attr('aria-hidden', 'true');
 
             // the input controls the overlay's expanded state
             $trigger
