@@ -1,10 +1,10 @@
 # jquery-hover-flyout
 
 <p>
-    <a href="https://travis-ci.org/ianmcburnie/jquery-hover-flyout"><img src="https://api.travis-ci.org/ianmcburnie/jquery-hover-flyout.svg?branch=master" alt="Build Status" /></a>
-    <a href='https://coveralls.io/github/ianmcburnie/jquery-hover-flyout?branch=master'><img src='https://coveralls.io/repos/ianmcburnie/jquery-hover-flyout/badge.svg?branch=master&service=github' alt='Coverage Status' /></a>
-    <a href="https://david-dm.org/ianmcburnie/jquery-hover-flyout"><img src="https://david-dm.org/ianmcburnie/jquery-hover-flyout.svg" alt="Dependency status" /></a>
-    <a href="https://david-dm.org/ianmcburnie/jquery-hover-flyout#info=devDependencies"><img src="https://david-dm.org/ianmcburnie/jquery-hover-flyout/dev-status.svg" alt="devDependency status" /></a>
+    <a href="https://travis-ci.org/makeup-jquery/jquery-hover-flyout"><img src="https://api.travis-ci.org/makeup-jquery/jquery-hover-flyout.svg?branch=master" alt="Build Status" /></a>
+    <a href='https://coveralls.io/github/makeup-jquery/jquery-hover-flyout?branch=master'><img src='https://coveralls.io/repos/makeup-jquery/jquery-hover-flyout/badge.svg?branch=master&service=github' alt='Coverage Status' /></a>
+    <a href="https://david-dm.org/makeup-jquery/jquery-hover-flyout"><img src="https://david-dm.org/makeup-jquery/jquery-hover-flyout.svg" alt="Dependency status" /></a>
+    <a href="https://david-dm.org/makeup-jquery/jquery-hover-flyout#info=devDependencies"><img src="https://david-dm.org/makeup-jquery/jquery-hover-flyout/dev-status.svg" alt="devDependency status" /></a>
 </p>
 
 jQuery plugin that creates the basic interactivity for a flyout that opens on hover of trigger element
@@ -102,8 +102,8 @@ Each test run will generate the following reports:
 
 ## CI Build
 
-https://travis-ci.org/ianmcburnie/jquery-hover-flyout
+https://travis-ci.org/makeup-jquery/jquery-hover-flyout
 
 ## Code Coverage
 
-https://coveralls.io/github/ianmcburnie/jquery-hover-flyout?branch=master
+https://coveralls.io/github/makeup-jquery/jquery-hover-flyout?branch=master

@@ -1,11 +1,11 @@
 /**
 * @file jQuery plugin that creates the basic interactivity for a flyout that opens on hover of trigger element
-* @version 0.0.4
+* @version 0.0.5
 * @author Ian McBurnie <ianmcburnie@hotmail.com>
 * @requires jquery-next-id
 * @requires jquery-mouse-exit
 */
-(function($, window, document, undefined) {
+(function($, window, document, undefined) { // eslint-disable-line no-unused-vars
     /**
     * jQuery plugin that creates the basic interactivity for a flyout that opens on hover of trigger element
     *
@@ -36,17 +36,20 @@
 
             // get expanded state
             var isExpanded = function() {
-                return hasExpandedClass() ? $widget.hasClass(options.expandedClass) : $trigger.attr('aria-expanded') === 'true';
+                return hasExpandedClass() ?
+                    $widget.hasClass(options.expandedClass) : $trigger.attr('aria-expanded') === 'true';
             };
 
             // set state to expanded
             var setExpanded = function() {
-                return hasExpandedClass() ? $widget.addClass(options.expandedClass) : $trigger.attr('aria-expanded', 'true');
+                return hasExpandedClass() ?
+                    $widget.addClass(options.expandedClass) : $trigger.attr('aria-expanded', 'true');
             };
 
             // set state to collapsed
             var setCollapsed = function() {
-                return hasExpandedClass() ? $widget.removeClass(options.expandedClass) : $trigger.attr('aria-expanded', 'false');
+                return hasExpandedClass() ?
+                    $widget.removeClass(options.expandedClass) : $trigger.attr('aria-expanded', 'false');
             };
 
             // expand the overlay

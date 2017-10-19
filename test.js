@@ -1,5 +1,7 @@
-describe("jquery.hoverflyout.js", function() {
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 
+describe("jquery.hoverflyout.js", function() {
     jasmine.DEFAULT_TIMEOUT_INTERVAL = 500;
 
     var dummyEventTimeoutInterval = jasmine.DEFAULT_TIMEOUT_INTERVAL / 2;
@@ -19,8 +21,8 @@ describe("jquery.hoverflyout.js", function() {
     var $widget, $button, $overlay;
 
     var dummyEventHandlers = {
-        onButtonFocus : function(e) {},
-        onFlyoutCollapse : function(e) {}
+        onButtonFocus: function() {},
+        onFlyoutCollapse: function() {}
     };
 
     beforeEach(function() {
@@ -39,7 +41,7 @@ describe("jquery.hoverflyout.js", function() {
 
     it("should ensure id on overlay", function() {
         $widget.hoverFlyout();
-        expect($overlay.prop('id')).not.toBe(undefined);;
+        expect($overlay.prop('id')).not.toBe(undefined);
     });
 
     it("should add aria-controls property to trigger", function() {
@@ -51,5 +53,4 @@ describe("jquery.hoverflyout.js", function() {
         $widget.hoverFlyout();
         expect($trigger.attr('aria-expanded')).not.toBe(undefined);
     });
-
 });
